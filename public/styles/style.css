@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,400;1,500&display=swap');
+
+html,
+body {
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF512F, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF512F, #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.food-head {
+    /* width: 100vw; */
+    height: 15vh;
+    border-bottom: 1px solid darkgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.food-navigation .title {
+    font-size: 0.6rem;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.food-navigation img {
+    width: 10vw;
+}
+
+.food-navigation ul {
+    display: flex;
+    align-items: center;
+}
+
+.food-navigation ul li{
+    font-size: 0.8rem;
+    margin: 3%;
+    padding: 3%;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.food-navigation ul li a {
+    color: #FFF;
+    margin: 10%;transition: 0.3s;
+}
+
+.food-navigation ul li a:hover {
+    color: #121212;
+}
+
+.food-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 0%;
+}
+
+.food-buttons .order {
+    background: #121212;
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+    width: 14vw;
+    height: 7vh;
+    font-size: 1.0rem;
+    font-weight: 500;
+    margin: 5%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.food-buttons .order:focus {
+    border: 1px solid #FFF;
+}
+
+.food-buttons #selections  {
+    color: #FFF;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.food-buttons #selections option {
+    outline: none;
+    color: #121212;
+    cursor: pointer;
+}
+
+.food-buttons .shopping {
+    width: 4vw;
+    height: 7vh;
+    border: 1px solid darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin: 3%;
+}
+
+.food-buttons .shopping i {
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+.food-buttons .phone {
+    width: 20vw;
+    color: #FFF;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Conteudo destaque da home */
+
+.food-container-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "previous image next";
+}
+
+.food-container-home .previous-product {
+    grid-area: previous;
+    /* background-color: brown; */
+    height: 100vh;
+    border-right: 1px solid darkgray;
+}
+
+.food-container-home .previous-product h1 {
+    color: #FFF;
+    font-size: 3.9rem;
+    font-style: unset;
+}
+.food-container-home .home-image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: ; */
+    width: 100%;
+    height: 100%;
+}
+
+.food-container-home .home-image img {
+    /* width: 100%; */
+    height: 100%;
+
+}
+
+.food-container-home .next-product {
+    grid-area: next;
+    /* background-color: cornflowerblue; */
+    border-left: 1px solid darkgray;
+}
+
+.food-container-home .next-product h1 {
+    color: #FFF;
+    font-size: 3.9rem;
+}
