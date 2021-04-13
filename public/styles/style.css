@@ -18,10 +18,16 @@ body {
     
 }
 
+:root {
+    --bg-primary: #FF512F;
+    --bg-secundary: #000000;
+    --borders: rgba(255, 180, 109, 0.568);
+}
+
 .food-head {
     /* width: 100vw; */
     height: 15vh;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid var(--borders);
     display: flex;
     justify-content: space-between;
 }
@@ -61,7 +67,7 @@ body {
 }
 
 .food-navigation ul li a:hover {
-    color: #121212;
+    color:var(--bg-secundary);
 }
 
 .food-buttons {
@@ -71,7 +77,7 @@ body {
 }
 
 .food-buttons .order {
-    background: #121212;
+    background:var(--bg-secundary);
     color: #FFF;
     border: none;
     border-radius: 3px;
@@ -99,14 +105,14 @@ body {
 
 .food-buttons #selections option {
     outline: none;
-    color: #121212;
+    color:var(--bg-secundary);
     cursor: pointer;
 }
 
 .food-buttons .shopping {
     width: 4vw;
     height: 7vh;
-    border: 1px solid darkgray;
+    border: 1px solid var(--borders);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +140,7 @@ body {
 
 .food-container-home {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 20vw 1fr 15%;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "previous image next";
@@ -143,38 +149,125 @@ body {
 .food-container-home .previous-product {
     grid-area: previous;
     /* background-color: brown; */
-    height: 100vh;
-    border-right: 1px solid darkgray;
+    height: 84vh;
+    border-right: 1px solid rgba(255, 180, 109, 0.568);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
+
+
 
 .food-container-home .previous-product h1 {
     color: #FFF;
-    font-size: 3.9rem;
+    font-size: 5.9rem;
     font-style: unset;
 }
+
+
+.food-container-home .previous-product span {
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.food-container-home .previous-product .search {
+    width: 4vw;
+    height: 7vh;
+    border: 1px solid var(--borders);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin: 3%;
+    color: #FFF;
+    cursor: pointer;
+}
+
 .food-container-home .home-image {
     grid-area: image;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: ; */
-    width: 100%;
-    height: 100%;
+    width: 60vw;
+
 }
 
 .food-container-home .home-image img {
-    /* width: 100%; */
-    height: 100%;
-
+    width: 60vw;
+    height: 70vh;
+    
 }
 
 .food-container-home .next-product {
     grid-area: next;
     /* background-color: cornflowerblue; */
-    border-left: 1px solid darkgray;
+    border-left: 1px solid var(--borders);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .food-container-home .next-product h1 {
     color: #FFF;
-    font-size: 3.9rem;
+    font-size: 5.9rem;
+}
+
+.food-container-home .next-product span {
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.select-product {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.select-product h1:nth-child(1) {
+    padding: 1%;
+    color: var(--bg-secundary);
+    text-transform: uppercase;
+    
+}
+
+.select-product h1:nth-child(2) {
+    padding: 1%;
+    color: var(--bg-primary);
+    text-transform: uppercase;
+
+}
+
+.select-product .carousel-product {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.select-product .carousel-product img {
+    width: 50px;
+    height: 80px;
+    margin: 10px;
+}
+
+.select-product  span {
+    font-size: 1.5rem;
+    color: var(--bg-secundary);
+    width: 5%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-product  span:hover {
+    color: var(--bg-primary);
+    background-color: var(--bg-secundary);
 }
