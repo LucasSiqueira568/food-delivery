@@ -1,25 +1,19 @@
-$('.carousel-product').slick({
-    centerMode: true,
-    centerPadding: '60px',
+$('.home-image').slick({
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: $(".arrow-prev"),
+    nextArrow: $(".arrow-next"),
+    autoplay: true,
+    autoplaySpeed: 4000,
+  });
+
+  $('.carousel-product').slick({
+    infinite: true,
     slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
+    slidesToScroll: 3,
+    prevArrow: $(".fa-chevron-left"),
+    nextArrow: $(".fa-chevron-right")
   });
