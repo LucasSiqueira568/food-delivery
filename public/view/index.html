@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/469ed00513.js" crossorigin="anonymous"></script>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../styles/style.css">
     <title>Food Delivery</title>
 </head>
+
 <body>
+    <!-- Corpo da Pagina -->
     <div class="food-container">
+
+        <!-- abeçalho da Pagina -->
         <header class="food-head">
             <nav class="food-navigation">
                 <div class="title">
-                    <!-- <img src="../images/logo.png" alt="Food Delivery"> -->
                     <h1>Food Delivery</h1>
                 </div>
                 <ul>
@@ -28,10 +35,10 @@
             <div class="food-buttons">
                 <button type="submit" class="order">Comprar</button>
                 <select name="" id="selections">
-                        <option value="">PT</option>
-                        <option value="">EN</option>
-                        <option value="">US</option>
-                        <option value="">FR</option>
+                    <option value="">PT</option>
+                    <option value="">EN</option>
+                    <option value="">US</option>
+                    <option value="">FR</option>
                 </select>
                 <div class="shopping">
                     <i class="fas fa-shopping-bag"></i>
@@ -41,20 +48,73 @@
                 </div>
             </div>
         </header>
+
+        <!-- Home da Pagina -->
         <div class="food-container-home">
             <div class="previous-product">
                 <div class="search">
                     <i class="fas fa-search"></i>
                 </div>
-                <h1>01</h1>
+                <div class="previous-context">
+                    <h1>01</h1>
+                    <span class="arrow-prev"><i class="fas fa-long-arrow-alt-left"></i> Voltar</span>
+                </div>
             </div>
             <div class="home-image">
-                <img src="../images/home-destaque.png.crdownload" alt="">
+                <img src="../images/home-destaque-2.png" alt="">
+                <img src="../images/home-destaque-3.png" alt="">
+                <img src="../images/home-destaque-4.png" alt="">
+                <img src="../images/batata.png" alt="">
+                <img src="../images/cachorro-quente.png" alt="">
             </div>
             <div class="next-product">
                 <h1>02</h1>
+                <span class="arrow-next"> <i class="fas fa-long-arrow-alt-right"></i> Proximo</span>
+            </div>
+        </div>
+
+        <!-- Parte de Seleção de Produtos -->
+        <div class="select-product">
+            <div class="select-product-title">
+                <h1>Selecionar</h1>
+                <h1>Produto</h1>
+            </div>
+
+            <!-- Carousel de Produtos -->
+            <div class="select-carousel-product">
+                <span><i class="fas fa-chevron-left"></i></span>
+                <div class="carousel-product">
+                    <img src="../images/Desenhos/hamburguer.png" alt="Hambúrguer">
+                    <img src="../images/Desenhos/pizza.png" alt="Pizza">
+                    <img src="../images/Desenhos/sushi.png" alt="Sushi">
+                    <img src="../images/Desenhos/cupcake.png" alt="Cap Cake">
+                    <img src="../images/Desenhos/cachorro-quente.png" alt="Cachorro Quente">
+                    <img src="../images/Desenhos/batata.png" alt="Batata Frita">
+                </div>
+                <span><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="products-banners">
+                <div>
+                    <img src="../images/banner-1" alt="">
+                    <h1>As Melhores Pizzas</h1>
+                    <button type="submit">Mais informações</button>
+                </div>
+                <div>
+                    <img src="../images/banner-3" alt="">
+                    <h1>O Melhor Sabor</h1>
+                    <button type="submit">Mais informações</button>
+                </div>
+                <div>
+                    <img src="../images/banner-2" alt="">
+                    <h1>Os Melhores Produtos</h1>
+                    <button type="submit">Mais informações</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../scripts/carousel.js"></script>
+
 </html>
